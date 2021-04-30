@@ -1,0 +1,13 @@
+.c-tasks-status{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 10px;
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
+
+.c-tasks-status label{
+    margin-bottom: 0;
+    padding: 5px;
+}

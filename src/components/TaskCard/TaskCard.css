@@ -1,0 +1,32 @@
+.c-tasks .card{
+
+  width: 100%;
+  margin: 0;
+}
+
+.c-tasks .card>.task {
+    padding: 7px;
+}
+
+.c-tasks .task__remove-icon {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: inherit;
+    color: red;
+    cursor: pointer;
+    padding: 7px;
+    margin: 0;
+  }
+
+  .c-tasks .task__remove-icon:hover {
+      font-weight: bold;
+  }
+  
+  .c-tasks .card:hover .task__remove-icon {
+    display: block;
+  }
+
+  .c-tasks .list-group-item{
+    padding: 1px !important;
+}
