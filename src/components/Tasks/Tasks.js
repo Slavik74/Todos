@@ -7,8 +7,14 @@ import TasksStatus from './../TasksStatus/TasksStatus';
 
 export default function Tasks() {
 
-    const [todosList, setTodosList] = useState([])
+
+    const [todosList, setTodosList] = useState(JSON.parse(localStorage.getItem("todos") || "[]"))
     const [filter, setFilter] = useState(0)
+
+
+    useEffect(() => {
+        localStorage.setItem("todos", JSON.stringify(todosList));
+    }, [todosList])
 
     const handleNewTask = (task)=>{
         setTodosList(todosList.concat([task]))    
