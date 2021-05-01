@@ -8,25 +8,45 @@
     padding: 7px;
 }
 
-.c-tasks .task__remove-icon {
+.c-tasks .task__icons {
     display: none;
     position: absolute;
     right: 0;
     background: inherit;
-    color: red;
     cursor: pointer;
     padding: 7px;
     margin: 0;
-  }
+    
+}
 
-  .c-tasks .task__remove-icon:hover {
-      font-weight: bold;
-  }
-  
-  .c-tasks .card:hover .task__remove-icon {
-    display: block;
-  }
+.c-tasks .card:hover .task__icons {
+  display: block;
+}
 
-  .c-tasks .list-group-item{
+.c-tasks .task__remove-icon {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  font-size: 1.2rem;
+  color: red;
+}
+
+.c-tasks .task__remove-icon:hover {
+  font-size: 1.3rem;
+}
+
+.c-tasks .list-group-item{
     padding: 1px !important;
+}
+
+.c-tasks .whatsapp-icon{
+  position: absolute;
+  top: 12px;
+  right: 24px;
+  font-size: 0.8rem;
+  color: green;
+}
+
+.c-tasks .whatsapp-icon:hover {
+  font-size: 1rem;
 }
