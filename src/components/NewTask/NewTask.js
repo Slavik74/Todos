@@ -24,7 +24,9 @@ export default function NewTask({handleNewTask}) {
             <input type="text"className="new-task-input" placeholder="What's next?" onKeyDown={handleKeyDown} />
             {
                 wrongInput?
-                <Alert variant="danger">Your task is too short. try at least 2 characters</Alert>:null
+                <Alert variant="danger"  onClose={() => setWrongInput(false)} dismissible>
+                    Your task is too short. try at least 2 characters
+                </Alert>:null
             }
         </div>
     )

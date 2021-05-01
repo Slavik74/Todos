@@ -25,28 +25,35 @@
 
 .c-tasks .task__remove-icon {
   position: absolute;
-  top: 2px;
+  top: 7px;
   right: 5px;
-  font-size: 1.2rem;
+  background-color: inherit;  
+  font-size: 1.0rem;
   color: red;
+  text-align: center;
+  width: 20px;
 }
 
 .c-tasks .task__remove-icon:hover {
-  font-size: 1.3rem;
+  font-weight: bolder;
+  top: 6px;
 }
 
 .c-tasks .list-group-item{
-    padding: 1px !important;
+  padding: 1px !important;
 }
 
 .c-tasks .whatsapp-icon{
   position: absolute;
-  top: 12px;
-  right: 24px;
-  font-size: 0.8rem;
+  top: 10px;
+  right: 25px;
+  font-size: 1.2rem;
   color: green;
+  background-color: inherit;
+  width: 24px;
 }
 
 .c-tasks .whatsapp-icon:hover {
-  font-size: 1rem;
+  font-size: 1.3rem;
+  top: 9px;
 }

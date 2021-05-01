@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import './TaskCard.css';
 import {FormCheck } from 'react-bootstrap';
 import { shareTextToWhatsApp } from 'share-text-to-whatsapp';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import './TaskCard.css';
 
 export default function TaskCard({task, handleDeleteTask, handleChangeStatus}) {
 
@@ -25,11 +25,9 @@ export default function TaskCard({task, handleDeleteTask, handleChangeStatus}) {
         }
     }
 
-
     function  shareTaskToWhatsApp(message){
         shareTextToWhatsApp("You have new task: " + message); // This will open up WhatsApp and you will be shown a list of contacts you can send your message to.
     }
-
 
     return (
         <div className="card">
@@ -37,10 +35,9 @@ export default function TaskCard({task, handleDeleteTask, handleChangeStatus}) {
                 <FormCheck defaultChecked={checked} onChange={handleCheck} label={task.name} />
             </div>
             
-
             <div className="task__icons">
                 <FontAwesomeIcon className="whatsapp-icon" icon={faWhatsapp}  onClick={()=>shareTaskToWhatsApp(task.name)}/>
-                <span className="task__remove-icon" onClick={confirmDelete}>x</span>
+                <span className="task__remove-icon" onClick={confirmDelete}>X</span>
             </div>
         </div>
     )

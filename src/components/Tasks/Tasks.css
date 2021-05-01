@@ -6,16 +6,16 @@
         padding: 3px;
         overflow: hidden;
     }
-  }  
+}  
 
 .c-tasks{
     background-image: linear-gradient( rgba(204, 199, 190, 0.801), floralwhite,  rgba(204, 199, 190, 0.801) );
     border: 1px solid rgb(214, 211, 205);
     margin-top: 50px;
-    min-width: 500px;
+    min-width: 440px;
     padding: 20px;
 }
-  
+
 .c-tasks header{
     text-align: center;
     padding-bottom: 20px;
@@ -24,4 +24,3 @@
 .c-tasks .tasks-box{
     padding-bottom: 20px;
 }
-
